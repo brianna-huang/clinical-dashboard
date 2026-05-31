@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# databases
+*.db
+
+# VS Code
+.vscode/
+
+outputs/
