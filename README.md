@@ -1,4 +1,4 @@
-# Teiko Takehome: Immune Cell Population Analysis Pipeline & Dashboard
+# Immune Cell Population Analysis Pipeline & Dashboard
 
 ## How to run
 
@@ -41,7 +41,7 @@ In the orignal data provided, cell population measurements are stored as columns
 
 To normalize the data, I separated the sample metadata and cell population measurements into two tables. The ```samples``` table stores one row per sample, while the ```cell_populations``` table stores one row per population measurement. This long format design removes repeating groups, reduces redundancy, supports analytical queries, and allows potentially new immune populations to be added without requiring alterations to the schema itself. Thus, the resulting structure would scale a lot better to thousands of samples and additional immune cell populations or other measurements.
 
-In a large prod system, I would actually normalize the schema further to 3NF so that we have separate subjects and projects tables as well, but for this assignment, I chose the design above for simplicity.
+In a large prod system, I would actually normalize the schema further to 3NF so that we have separate subjects and projects tables as well, but for now, I chose the design above for simplicity.
 
 ## Code Structure
 
