@@ -1,5 +1,13 @@
 # Immune Cell Population Analysis Pipeline & Dashboard
 
+## Summary
+This project analyzes immune cell population data from a CSV file of cell counts for a clinical study of melanoma patients treated with miraclib, and displays visualizations into a Streamlit dashboard. It has four parts:
+
+1. Data ingestion: loads the raw data into a normalized SQLite database (long-format schema: samples + cell_populations tables).
+2. Overview analysis: computes relative frequency of each cell population per sample.
+3. Statistical analysis: compares responders vs. non-responders (PBMC, miraclib-treated melanoma patients) using t-tests and Mann-Whitney U tests, with a boxplot visualization.
+4. Subset analysis: breaks down the baseline PBMC melanoma cohort by project, response, and sex.
+
 ## How to run
 
 ### 1. Setup environment and install all required dependencies
